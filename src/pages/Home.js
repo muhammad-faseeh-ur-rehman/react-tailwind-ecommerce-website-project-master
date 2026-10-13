@@ -9,7 +9,7 @@ const Home = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetchCategories(); // Kategorileri API'den al
+    fetchCategories(); 
   }, []);
 
   const fetchCategories = async () => {
