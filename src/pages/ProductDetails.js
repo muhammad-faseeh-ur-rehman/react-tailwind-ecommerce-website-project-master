@@ -37,7 +37,6 @@ const ProductDetail = () => {
           <div className='flex flex-1 justify-center items-center mb-8 lg:mb-0'>
             <img src={imageUrl} alt='' className="max-w-[200px] lg:max-w-sm" />
           </div>
-          {/* text */}
           <div className='flex-1 text-center lg:text-left'>
             <h1 className='text-[26px] font-medium mb-2max-w-[450px] mx-auto'>{title}</h1>
             <div className='text-xl font-medium text-red-500 mb-6'>$ {price}</div>
