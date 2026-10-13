@@ -37,14 +37,10 @@ const PaymentScreen = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    // Perform validation and processing
     if (!address || !paymentMethod || !paymentDetails) {
       alert('Please fill in all required fields');
       return;
     }
-
-    // Calculate the total price based on your logic
     const totalPrice = calculateTotalPrice();
 
     // Redirect to the payment page with the necessary data
