@@ -24,7 +24,7 @@ const CheckoutScreen = () => {
             to="/payment"
             className="bg-primary text-white py-2 px-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-300"
           >
-            Proceed to Payment
+            Proceed To Payment
           </Link>
         </div>
       </div>
