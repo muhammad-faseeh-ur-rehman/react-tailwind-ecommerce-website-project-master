@@ -29,7 +29,7 @@ const Home = () => {
 
   const filteredProducts = products.filter(item => {
     if (selectedCategory === 'All') {
-      return true; // Tüm ürünleri göster
+      return true;
     }
     return item.category.name === selectedCategory;
   });
