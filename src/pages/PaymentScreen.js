@@ -42,8 +42,6 @@ const PaymentScreen = () => {
       return;
     }
     const totalPrice = calculateTotalPrice();
-
-    // Redirect to the payment page with the necessary data
     navigate('/payment', {
       state: {
         address,
@@ -58,9 +56,6 @@ const PaymentScreen = () => {
   };
 
   const calculateTotalPrice = () => {
-    // Calculate the total price based on your logic
-    // You can access the cart items or any other relevant data here
-    // For simplicity, let's assume the total price is $100
     return 100;
   };
 
