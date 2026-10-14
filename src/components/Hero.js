@@ -6,7 +6,6 @@ const Hero = () => {
   return (
     <section className=' bg-pink-200 h-[800px] bg-hero bg-no-repeat bg-cover bg-center py-24'>
       <div className='container mx-auto flex justify-around h-full'>
-        {/* text */}
         <div className='flex flex-col justify-center'>
           <div className='font-semibold flex items-center uppercase'>
             <div className=' font-light'>Amazonun En İyı Satıcısı İdris İbrahim ERTEN </div>
@@ -15,7 +14,6 @@ const Hero = () => {
           <span className=' font-bold'>Yaz'a Merhaba</span>
           </h1>
         </div>
-        {/* image */}
         <div className='hidden lg:block'>
           <img src={PcImg} alt='' />
         </div>
