@@ -5,7 +5,6 @@ import { CartContext } from '../contexts/CartContext';
 import { Link } from 'react-router-dom';
 import Logo from '../img/logo.svg';
 import { ProductContext } from '../contexts/ProductContext';
-
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const { isOpen, setIsOpen } = useContext(SidebarContext);
@@ -17,11 +16,9 @@ const Header = () => {
       window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
     });
   }, []);
-
   useEffect(() => {
     fetchCategories();
   }, []);
-
   const fetchCategories = async () => {
     try {
       const response = await fetch('https://api.escuelajs.co/api/v1/products');
@@ -32,7 +29,6 @@ const Header = () => {
       console.error('Failed to fetch categories:', error);
     }
   };
-
   const handleCategoryChange = async (event) => {
     const selectedCategory = event.target.value;
     setSelectedCategory(selectedCategory);
@@ -48,7 +44,6 @@ const Header = () => {
       console.error('Failed to fetch products:', error);
     }
   };
-
   return (
     <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all`}>
       <div className='container mx-auto flex items-center justify-between h-full'>
