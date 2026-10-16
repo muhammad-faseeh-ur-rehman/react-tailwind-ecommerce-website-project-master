@@ -11,7 +11,7 @@ const CheckoutScreen = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-3xl font-bold mb-6">Checkout</h1>
       <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
-        <h2 className="text-xl font-semibold mb-4">Cart Summary</h2>
+        <h2 className="text-xl font-semibold mb-4">Cart summary</h2>
         {cart.map((item) => (
           <div className="flex justify-between items-center mb-2" key={item.id}>
             <p className="text-base">{item.title}</p>
