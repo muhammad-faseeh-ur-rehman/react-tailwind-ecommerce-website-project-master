@@ -14,7 +14,6 @@ const Sidebar = () => {
   const handleCheckout = () => {
     navigate('/checkout');
   };
-
   return (
     <div className={`${isOpen ? 'right-0' : 'right-full'} w-full bg-white fixed top-0 h-full shadow-2xl md:w-[30vw] xl:max-w-[450px] transition-all duration-250 z-20 px-4 lg:px-[35px]`}>
       <div className='flex items-center justify-between py-6 border-b'>
