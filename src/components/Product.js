@@ -2,13 +2,11 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BsPlus, BsEyeFill } from 'react-icons/bs';
 import { CartContext } from '../contexts/CartContext';
-
 const Product = ({ product }) => {
   const { addToCart } = useContext(CartContext);
   const { id, images, category, title, price, discount } = product;
   const discountedPrice = (price - (price * 0 / 100)).toFixed(2);
   const imageUrl = images && images.length > 0 ? images[0] : '';
-
   return (
     <div>
       <div className='border border-[#e4e4e4] h-[300px] mv-4 relative overflow-hidden group transition'>
